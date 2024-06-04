@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html {
+  background-color: black;
+}
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+/* nav bar  */
+.nav {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  font-size: 15px;
+  color: white;
+}
+/* end of nav bar */
+/* explore part  */
+#explore {
+  font-size: 3vmin;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: rgb(39, 74, 231) 1px 0 10px;
+}
+/* end of explore */
+/* general settings  */
+.section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  font-family: "Cabin", sans-serif;
+  color: #ffeded;
+  text-transform: uppercase;
+  font-size: 5vmin;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+section:nth-child(even) {
+  justify-content: flex-end;
+}
+
+/* Button explore */
+button {
+  width: 8em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 3px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  box-shadow: rgb(39, 74, 231) 1px 0 10px;
+  margin: 10px;
+}
+.typeOne {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  text-shadow: rgb(39, 74, 231) 1px 0 10px;
+}
+button::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(243, 67, 67) 11.2%,
+    rgb(2, 38, 208) 100.2%
+  );
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 9em;
+}
+
+/* gpgpu and flow field part  */
+
+.gpgpuDiv {
+  height: 60vh;
+  width: 60vh;
+}
+#gpgpu p {
+  font-size: 3.5vmin;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: none;
+}
+span {
+  color: firebrick;
+}
+/* end of gpgpu and flow field part  */
+.morph {
+  height: 60vh;
+  width: 60vh;
+  margin-top: 30px;
+}
+#morphing p {
+  font-size: 3.5vmin;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.secondary {
+  font-size: 6vmin;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: rgb(39, 74, 231) 1px 0 10px;
+}

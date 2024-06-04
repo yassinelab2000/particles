@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draft</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas class="webgl"></canvas>
+
+    <nav class="nav">
+      <h2>PARTICLES</h2>
+    </nav>
+
+    <section class="section" id="explore">
+      <h1>Welcome to particles world</h1>
+
+      <button><a class="typeOne" href="#gpgpu">EXPLORE</a></button>
+    </section>
+    <section class="section" id="gpgpu">
+      <div class="gpgpuDiv">
+        <h2 class="secondary">The experience</h2>
+        <p>
+          <br />
+          I utilized two techniques to move the particles of the turtle:
+          <span>GPGPU</span> and <span>FLOW FIELD</span>. GPGPU, or
+          General-Purpose computing on Graphics Processing Units, leverages the
+          GPU for data processing rather than pixel rendering, making it ideal
+          for performing complex calculations repeatedly and efficiently.
+          Meanwhile, the flow field technique employs spatialized streams to
+          direct the particles' movement, creating dynamic and intricate
+          patterns.
+        </p>
+        <button><a class="typeOne" href="#morphing">More</a></button>
+      </div>
+    </section>
+    <section class="section" id="morphing">
+      <div class="morph">
+        <h2 class="secondary">more</h2>
+        <p>
+          The world of particles is truly beautiful, isn't it? With particles,
+          we can create countless shapes and convey numerous ideas. This website
+          is designed to showcase the incredible potential of particles,
+          offering a unique experience for visitors and users. This website was
+          created by
+          <a
+            href="https://www.linkedin.com/in/mohamed-yassine-labiade-09801b1a1/"
+            target="_blank"
+            >Yassine Labiade</a
+          >.
+        </p>
+        <button><a class="typeOne" id="skip">>>></a></button>
+      </div>
+    </section>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
